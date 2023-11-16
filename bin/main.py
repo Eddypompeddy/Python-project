@@ -1,4 +1,4 @@
-import requests
+krimport requests
 import difflib
 import smtplib
 from email.mime.text import MIMEText
@@ -15,9 +15,9 @@ def get_website_content(url):
         return None
 
 def send_email(content_diff):
-    sender_email = 'deine_email@example.com' # Deine E-Mail-Adresse
-    receiver_email = 'ziel_email@example.com' # Empfänger-E-Mail-Adresse
-    password = 'dein_passwort' # Dein E-Mail-Passwort
+    sender_email = 'edgarkrapp.ek@gmail.com' # Deine E-Mail-Adresse
+    receiver_email = 'edgarkrapp.ek@gmail.com' # Empfänger-E-Mail-Adresse
+    password = 'Seelsorge1+' # Dein E-Mail-Passwort
 
     subject = 'Website aktualisiert!'
     body = f'Die Website wurde aktualisiert. Änderungen:\n\n{content_diff}'
@@ -55,6 +55,6 @@ url_to_monitor = 'https://example.com' # URL der zu überwachenden Website
 
 while True:
     check_website(url_to_monitor)
-    time.sleep(1800) # Überprüfe alle 30 Minuten (Anpassung der Überprüfungsintervalle nach Bedarf)
+    time.sleep(3600) # Überprüfe alle 30 Minuten (Anpassung der Überprüfungsintervalle nach Bedarf)
 
     
